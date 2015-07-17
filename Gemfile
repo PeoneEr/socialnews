@@ -9,6 +9,7 @@ group :default do
   gem 'devise-russian'
   gem 'jbuilder', '~> 2.0'
   gem 'jquery-rails'
+  gem 'newrelic_rpm'
   gem 'pg'
   gem 'rails'
   gem 'sass-rails', '>= 3.2'
