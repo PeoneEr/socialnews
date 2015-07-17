@@ -1,1 +1,15 @@
-hello hule
+<div class="container">
+  <% @entries.each do |entry| %>
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h4>
+          <%= entry.text %>
+        </h4>
+      </div>
+      <div class="col-xs-12 col-sm-12-col-md-12 col-lg-12">
+        <%= image_tag entry.src_big_url, class: 'img-responsive' %>
+      </div>
+    </div>
+    <hr />
+  <% end %>
+</div>

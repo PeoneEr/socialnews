@@ -1,4 +1,6 @@
 class Group < ActiveRecord::Base
+  validates_presence_of :uid
+  validates_uniqueness_of :uid
 end
 
 # == Schema Information

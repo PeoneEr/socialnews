@@ -1,4 +1,5 @@
 class Entry < ActiveRecord::Base
+  validates_uniqueness_of :text, :src_url, :src_big_url, :src_small_url
 end
 
 # == Schema Information
