@@ -8,7 +8,7 @@ class Vk
   end
 
   def photos
-    if @vk_hash.attachment.photo
+    if @vk_hash.attachment && @vk_hash.attachment.photo
       [@vk_hash.attachment.photo.src, @vk_hash.attachment.photo.src_big, @vk_hash.attachment.photo.src_small]
     else
       []

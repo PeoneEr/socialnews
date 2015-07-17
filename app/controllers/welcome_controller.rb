@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @entries = Entry.all.order('id desc')
+    @entries = current_user.entries.order('id desc')
   end
 end

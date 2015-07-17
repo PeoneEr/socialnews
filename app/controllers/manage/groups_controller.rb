@@ -1,10 +1,10 @@
 class Manage::GroupsController < Manage::ApplicationController
   def index
-    @groups = Group.all
+    @groups = current_user.groups
   end
 
   def edit
-    @group = Group.find(params[:id])
+    @group = current_user.groups.find(params[:id])
   end
 
   def update
@@ -12,11 +12,11 @@ class Manage::GroupsController < Manage::ApplicationController
   end
 
   def new
-    @group = Group.new
+    @group = current_user.groups.new
   end
 
   def create
-    @group = Group.new permitted_params
+    @group = current_user.groups.new permitted_params
 
     if @group.save
       redirect_to manage_root_path

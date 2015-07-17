@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150717134550) do
     t.string   "src_big_url"
     t.string   "src_url"
     t.string   "src_small_url"
+    t.integer  "user_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150717134550) do
   create_table "groups", force: :cascade do |t|
     t.integer  "uid"
     t.string   "title"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
