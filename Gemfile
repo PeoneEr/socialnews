@@ -12,6 +12,7 @@ group :default do
   gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'uglifier', '>= 1.3.0'
   gem 'vkontakte_api', '~> 1.4'
+  gem 'whenever'
 end
 
 group :development, :test do
