@@ -18,6 +18,13 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-db-tasks', require: false
+  gem 'capistrano-deploytags'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end

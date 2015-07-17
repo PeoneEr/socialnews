@@ -57,6 +57,25 @@ GEM
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
+    capistrano (3.4.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+    capistrano-db-tasks (0.4)
+      capistrano (>= 3.0.0)
+    capistrano-deploytags (1.0.3)
+      capistrano (>= 3.2.0)
+    capistrano-passenger (0.1.1)
+      capistrano (~> 3.0)
+    capistrano-rails (1.1.3)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     chronic (0.10.2)
     chunky_png (1.3.4)
     coffee-rails (4.1.0)
@@ -66,6 +85,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    colorize (0.7.7)
     columnize (0.9.0)
     compass (1.0.3)
       chunky_png (~> 1.2)
@@ -127,6 +147,9 @@ GEM
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     oauth2 (1.0.0)
@@ -197,6 +220,10 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    sshkit (1.7.1)
+      colorize (>= 0.7.0)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -226,6 +253,13 @@ DEPENDENCIES
   aifactory-commons
   bootstrap-sass (~> 3.3.5)
   byebug
+  capistrano
+  capistrano-bundler
+  capistrano-db-tasks
+  capistrano-deploytags
+  capistrano-passenger
+  capistrano-rails
+  capistrano-rvm
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
