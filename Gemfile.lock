@@ -49,6 +49,7 @@ GEM
     autoprefixer-rails (5.2.0.1)
       execjs
       json
+    bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.5)
@@ -107,6 +108,16 @@ GEM
       highline (>= 1.5.2)
       multi_json (>= 1.1)
     debug_inspector (0.0.2)
+    devise (3.5.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.5)
+    devise-russian (2.0.1.1)
+      devise
     erubis (2.7.0)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -160,6 +171,7 @@ GEM
       rack (~> 1.2)
     oj (2.12.10)
     options (2.3.2)
+    orm_adapter (0.5.0)
     pg (0.18.2)
     progress_bar (1.0.3)
       highline (~> 1.6.1)
@@ -197,6 +209,8 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.2.0)
       json (~> 1.4)
+    responders (2.1.0)
+      railties (>= 4.2.0, < 5)
     sass (3.4.16)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -238,6 +252,8 @@ GEM
       faraday_middleware-parse_oj (~> 0.3)
       hashie (>= 2.0)
       oauth2 (>= 0.8)
+    warden (1.2.3)
+      rack (>= 1.0)
     web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -261,6 +277,9 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
+  devise
+  devise-bootstrap-views
+  devise-russian
   jbuilder (~> 2.0)
   jquery-rails
   pg
