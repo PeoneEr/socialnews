@@ -1,0 +1,11 @@
+/.bundle
+/log
+/tmp
+config/database.yml
+config/deploy/production.rb
+config/settings.yml
+config/newrelic.yml
+public/system/*
+/config/deploy.rb
+
+/solr/
