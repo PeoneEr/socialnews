@@ -1,4 +1,7 @@
 <div class="container">
+  <%= link_to_previous_page @entries, "Дальше", class: ['btn', 'btn-default'] %>
+  <hr />
+
   <% @entries.each do |entry| %>
     <div class="row center-block">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -13,6 +16,6 @@
     <hr />
   <% end %>
   <div class="row">
-    <%= link_to_next_page @entries, "Дальше" %>
+    <%= link_to_next_page @entries, "Дальше", class: ['btn', 'btn-default'] %>
   </div>
 </div>
