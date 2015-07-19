@@ -10,6 +10,7 @@ group :default do
   gem 'jbuilder', '~> 2.0'
   gem 'jquery-rails'
   gem 'newrelic_rpm'
+  gem 'kaminari'
   gem 'pg'
   gem 'rails'
   gem 'sass-rails', '>= 3.2'

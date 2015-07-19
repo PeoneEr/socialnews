@@ -8,6 +8,7 @@ require 'capistrano/deploytags'
 require 'new_relic/recipes'
 require 'capistrano/passenger'
 require "whenever/capistrano"
+require 'capistrano-db-tasks'
 
 set :rvm_type, :user
 set :rvm_ruby_version, '2.1.5p273'
