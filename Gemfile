@@ -13,6 +13,7 @@ group :default do
   gem 'kaminari'
   gem 'pg'
   gem 'rails'
+  gem 'redis-rails'
   gem 'sass-rails', '>= 3.2'
   gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'simple_form'

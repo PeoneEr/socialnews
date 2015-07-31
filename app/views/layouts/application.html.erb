@@ -9,7 +9,13 @@
   </head>
   <body>
 
-    <%= yield %>
+    <div class="container">
+      <h2 class='header'>Список последних записей</h2>
+      <h4 class="header">Последнее обновление: <%= Time.zone.parse($redis.get 'last_update').strftime('%H:%M') %></h4>
+
+      <%= yield %>
+
+    </div>
 
   </body>
 </html>
