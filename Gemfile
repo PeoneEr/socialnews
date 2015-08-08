@@ -7,10 +7,11 @@ group :default do
   gem 'devise'
   gem 'devise-bootstrap-views'
   gem 'devise-russian'
+  gem 'header'
   gem 'jbuilder', '~> 2.0'
   gem 'jquery-rails'
-  gem 'newrelic_rpm'
   gem 'kaminari'
+  gem 'newrelic_rpm'
   gem 'pg'
   gem 'rails'
   gem 'redis-rails'
@@ -20,7 +21,6 @@ group :default do
   gem 'uglifier', '>= 1.3.0'
   gem 'vkontakte_api', '~> 1.4'
   gem 'whenever'
-  gem 'header'
 end
 
 group :development, :test do
