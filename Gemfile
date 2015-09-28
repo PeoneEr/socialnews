@@ -21,6 +21,7 @@ group :default do
   gem 'uglifier', '>= 1.3.0'
   gem 'vkontakte_api', '~> 1.4'
   gem 'whenever'
+  gem 'rack', '~> 1.6.0'
 end
 
 group :development, :test do

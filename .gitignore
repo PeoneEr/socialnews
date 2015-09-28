@@ -9,3 +9,4 @@ public/system/*
 /config/deploy.rb
 /solr/
 /test
+/bin
