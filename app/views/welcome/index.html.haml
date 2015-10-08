@@ -1,0 +1,22 @@
+.row
+  .col-xs-12
+    = link_to_previous_page @entries, 'Назад', class: ['btn', 'btn-default']
+
+%hr
+
+- @entries.each do |entry|
+  .row
+    .col-xs-12
+      %h4= entry.text.html_safe
+
+    .col-xs-12
+      = image_tag entry.src_big_url, class: ['img-responsive', 'js-show-image'], data: { src: entry.src_big_url }
+  %hr
+
+%hr
+
+= render partial: 'commons/modal'
+
+.row
+  .col-xs-12
+    = link_to_next_page @entries, 'Дальше', class: ['btn', 'btn-default']

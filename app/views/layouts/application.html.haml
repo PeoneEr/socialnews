@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Фиды социальных сетей
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    = favicon_link_tag
+
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
+
+  %body
+    .container-fluid
+
+      = render partial: 'header/header'
+      .container
+        .row.col-xs-10.col-xs-offset-2
+          %h2.header Список последних записей
+          %h4.header= "Последнее обновление #{Time.zone.parse($redis.get 'last_update').strftime('%H:%M')}"
+
+          = yield

@@ -22,6 +22,7 @@ group :default do
   gem 'vkontakte_api', '~> 1.4'
   gem 'whenever'
   gem 'rack', '~> 1.6.0'
+  gem 'haml'
 end
 
 group :development, :test do
